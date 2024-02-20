@@ -1,0 +1,44 @@
+1.Emmet is a plug in for many text editors which greatly imporves html and css work flow;
+here in this topics
+we created "Hello world" program using *HTML *Javascript *React
+adding React using CDN LINKS.
+WHY? we can use react without downloading and installing anything in your local system.
+ provides faster load times, optimized for quick content delivery and reducing the time 
+ it takes to load for large and media rich web sites.
+ inside cdn we have two links React development.js which is the 
+ core library for building ui for  react applications.
+ which provides functionality for defining and rendering components,
+ handling user inputs and managing components states.
+  and react dom is a package for integraton between for react and react dom.
+
+  how we can creact H1 tags or any using react =>  React.createElement("h1");
+  react need root where need all dom manipulation 
+   ReactDOM.createRoot()
+   how we put h1 tag in our root;
+    root.render(h1)
+
+
+    const head =  React.createElement
+    ("h1",{id:"tittle"},"Hello world! using react");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+     root.render(head);
+
+     if we need nested tags just wrap them into an array
+     const parent = React.createElement("div",{id:"parent"},
+        [
+        React.createElement("div",{id:"child"},
+        [
+        React.createElement("h1",{},"this is h1"),
+        React.createElement("h2",{},"this is h2")],
+
+        React.createElement("div",{id:"child"},
+        [
+        React.createElement("h3",{},"this is h1"),
+        React.createElement("h4",{},"this is h2")]
+        ))
+        ])
+
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(parent)
+
