@@ -4,6 +4,8 @@
   "description": "This is lala React crash tut",
   
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build",
     "test": "jest"
   },
   "repository": {
@@ -24,5 +26,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "browserLists":{
+    "browserslist": "> 0.5%, last 2 versions, not dead"
   }
 }
