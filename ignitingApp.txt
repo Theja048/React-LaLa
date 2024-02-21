@@ -1,0 +1,40 @@
+IGNITE OUR app
+npm is basically manages packages but not stand for node package manager.
+package.Json is configuration for npm .
+sometimes packages also known as dependencies.
+webpack,parcel ->bundlers --> basically bundles our app which can make our app and push it to 
+production
+
+two types of dependency -> dev (developing our app) and general (production ready) dependency//
+
+package-lock.json -> which keeps tracking the exact version or keeps the exact all record
+to avoid habdling errors in production ready
+
+ we hv used gitignore to ignore all regenerative stuffs like node_modules, parcel_caches,dist.....
+
+
+ WE use parcel
+// npx parcel index.html which will hosted in server.
+it will hosted on port parcel is doing this.
+npx -> we've npm -> we're calling the command 
+npx->execute the package we use npx parcel index.html => to execute
+
+we have seen one way in last time but now we are going to see another way 
+because cdn is not a good way because keep updataing managing our react app we use install react app
+as a package
+
+now we have removed cdn because we dont need it we ve installed it
+
+to build fast we use npx parcel build index.html
+%
+parcel 
+Dev building
+LOcal server
+HMR - Hot module replacement
+File watching Algorithm -- by c++
+caching - faster building;
+code splitting'
+diff bundling
+Diagnostic
+tree shaking alg -> which remove unused codes 
+modify bundle
