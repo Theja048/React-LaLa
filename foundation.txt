@@ -1,0 +1,23 @@
+previously we've used npx parcel .. stuff to run our project or website;
+but its not a good way all time then we creacted npx script;
+"npm start" for production dev "npm run build";
+
+JSX : jsx is not html, it looks like html,
+which is used to create React elements easily and readable;
+also its not a part of react
+JSX => transpiled before it reaches the js by parcel (manager) from babel (lib,package);
+jsx transpiled react elements which creats an object and coverts to html when renders
+
+Components: EveryThing in react is a component;
+two types 
+1) Class base component {old way}  normal js class
+2) Function base component {new way} javascript functons
+
+const Head = () =>{
+    return <h1>Hello world</h1>
+}
+ const root = ReactDOM.createRoot(document.getElementById("root"));
+just wrap inside render
+ root.render(<Head/>)
+
+ when you wrap composing of two cmponents into one component
